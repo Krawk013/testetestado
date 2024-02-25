@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8">
+        <title>Chat App</title>
+        
+        <!-- Stylesheet Links -->
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    
+    <body>
+        <!-- Login Form -->
+        <div class="login-container">
+            <h1>Welcome to the Chat App!</h1>
+            
+            <input type="text" placeholder="Enter your username..." id="usernameInput"/>
+            <button onclick="joinChat()">Join Chat</button>
+        </div>
+        
+        <!-- Main Container -->
+        <main id="chatContainer"></main>
+        
+        <!-- Settings Menu -->
+        <nav id="settingsMenu">
+            <span><strong>Settings</strong></span>
+                
+                <label for="changeUsernameButton"><b>Change Username</b></label>
+                <button id="changeUsernameButton" onclick="showChangeNameForm()">Edit Info</button>
+            
+            <hr/>
+            
+            <button id="logoutButton" onclick="logoutUser()">Logout</button>
+        </nav>
+        
+        <!-- Change Name Form -->
+        <section id="changeNameSection">
+            <h2>Change Your Username</h2>
+             
+            <input type="text" placeholder="New username..." id="newUserNameInput"/>
+              
+            <button id="confirmChangeNameBtn" onclick="updateUsername(event)">Update</button>
+          
+          <button id="cancelChangeNameBtn" onclick="hideChangeNameForm()">Cancel</button>
+            
+      </section>
+        
+        <!-- Script Tag -->
+        <script src="/scripts/app.js"></script>
+    </body>
+</html>
