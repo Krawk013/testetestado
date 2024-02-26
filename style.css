@@ -1,0 +1,18 @@
+#chat {
+    width: 300px;
+}
+
+/* Style the chat bubbles */
+.message {
+    padding: 1em;
+    border-radius: 1rem;
+    margin-bottom: 0.5em;
+}
+
+.user {
+    background-color: #ccc;
+}
+
+.bot {
+    background-color: #eee;
+}
